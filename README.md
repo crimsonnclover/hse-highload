@@ -183,7 +183,7 @@ Multicast отдаёт одну копию на канал независимо 
 
 **(б) Приём заявок.**
 $$
-B_{in}^{peak} = 110\,000 \times 50\text{ Б} \approx 5{,}5 \text{ МБ/с} \approx 44 \text{ Мбит/с}
+B_{in}^{peak} = 110{,}000 \times 50 \approx 5.5 \text{ MB/s} \approx 44 \text{ Mbit/s}
 $$
 
 **(в) Информационный контур.** Основную раздачу котировок рознице ведут брокеры. Консервативная оценка публичного сервиса биржи:
@@ -363,12 +363,14 @@ flowchart TB
 
 **1) Ограничитель TLS:**
 $$
-TLS_{CPS} = 30\,000 \times 0{,}25 = 7\,500 \text{ CPS}, \quad CPS_{eff} = 7\,300 \times 0{,}5 = 3\,650, \quad N_{ssl} = \left\lceil \frac{7\,500}{3\,650} \right\rceil = 3
+TLS_{CPS} = 30\,000 \times 0.25 = 7\,500 \text{ CPS}
 $$
-
+$$
+CPS_{eff} = 7\,300 \times 0.5 = 3\,650, \quad N_{ssl} = \left\lceil \frac{7\,500}{3\,650} \right\rceil = 3
+$$
 **2) Ограничитель сети:**
 $$
-N_{net} = \left\lceil \frac{3}{25 \times 0{,}88} \right\rceil = 1
+N_{net} = \left\lceil \frac{3}{25 \times 0.88} \right\rceil = 1
 $$
 
 **3) Ограничитель соединений:**
